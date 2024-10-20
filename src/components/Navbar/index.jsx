@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
         {token ? (
 
-        <button onClick={handleLogout}> Logouut</button>
+        <button onClick={handleLogout} className="hover:underline"> Logout</button>
             
         ):( 
             <Link to={'/login'}>

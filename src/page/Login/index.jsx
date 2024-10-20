@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/Navbar";
 
 const Login = () => {
     const [error, setError] = useState ("")
@@ -45,6 +46,8 @@ const Login = () => {
 
 
     return (
+        <>
+        <Navbar />
         <div className="flex flex-col justify-center items-center gap-5">
             <div className="mt-9">
                 <h1>LOGIN</h1>
@@ -64,6 +67,7 @@ const Login = () => {
         </div>
 
         </div>
+        </>
     )
 }
 export default Login
